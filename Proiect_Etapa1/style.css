@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: rgb(122, 82, 122);
+    color: gold;
+    position: relative;
+    width: 100%;
+    height:100px;
+}
+footer{
+    background-color: rgb(122, 82, 122);
+    width: 100%;
+    height:50px;
+}
+main{
+    margin-top: 2%;
+    position:relative;
+    margin-left: 2%;
+}
+#title{
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+    position: relative;
+    font-size: 85px;
+}
+nav{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 33%;
+    margin-right: 40px;
+}
+.bar{
+    position: absolute;
+    border-radius: 10px;
+    top:0;
+    font-size: xx-large;
+    margin-top: 25px;
+    margin-left: 23%;
+    height: 50px;
+    width: 600px;
+    border-style: solid;
+    border-color: gold;
+}
+#meniu_head{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.men{
+    border-style: solid;
+    border-color: rgb(122, 82, 122);
+    color:  rgb(122, 82, 122);
+    background-color: gold;
+    border-radius: 10px;
+    height: 100px;
+    font-size: xx-large;
+    font-weight: bolder;
+    width: 220px;
+    padding: 0;
+}
+  
+  .dd {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .content {
+    display: none;
+    position: relative;
+    background-color: rgb(122, 82, 122);
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .content a{
+      color:gold;
+      display: block;
+      min-height: 40px;
+      border-style: solid;
+      font-size: larger;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: bold;
+      text-decoration: none;
+      border-width: 1px;
+      text-align: center;
+  }
+.content a:hover {background-color: gold; color:rgb(122, 82, 122);}
+
+.dd:hover .content {display: block;}
+
+.dd:hover .men {background-color: rgb(122, 82, 122); color:gold; border-style: solid; border-color: gold; border-width: 8px;}
+
+
+
+body{
+    background-color: rgb(255, 235, 235);
+
+}
+h2{
+    font-size: 40px;
+    border-bottom-style:solid ;
+    border-color: gold;
+    margin-right: 2%;
+}
+.link{
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    color: black;
+}
+#fav{
+    right: 0;
+    margin-right: 50px;
+    position: absolute;
+}
+.heart{
+    height: 30px;
+    width: 30px;
+    fill: white;
+    position: relative;
+    margin-right: 180px;
+    transition: fill 1s, stroke 2s;
+}
+.heart:hover{
+    fill:red;
+    stroke-opacity: 0;
+}
+.rez{
+    position: absolute;
+    color:  rgb(122, 82, 122);
+    background-color: gold;
+    height: 50px;
+    width: 150px;
+    margin-left: 10px;
+    border-style: solid;
+    font-size: large;
+    font-weight: bolder;
+    border-radius: 10px;
+    margin-top: -10px;
+    right: 0;
+
+}
+#grid{
+    position: relative;
+    padding-top: 8px;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-auto-rows: 250px;
+    grid-gap: 10px;
+
+}
+#grid>*{
+    width:100%;
+    height: 100%;
+}
+.desc{
+    font-size: larger;
+    margin-left: 10px;
+}
+h3{
+    position: relative;
+    margin-top: 10px;
+}
+.wifi{
+    font-size: 20px;
+    margin-right: 8px;
+}
+.parc{
+    font-size: 20px;
+    margin-right: 8px;
+}
+.animal{
+    font-size: 20px;
+    margin-right: 8px;
+}
+.eat{
+   font-size: 20px;
+   margin-right: 8px;
+}
+.wifi::before{
+    margin-left: 10px;
+    content: " \1F4F6 ";
+    font-size: 30px;
+}
+.parc::before{
+    content: " \1F17F ";
+    font-size: 30px;
+}
+.animal::before{
+    content: " \1F43E ";
+    font-size: 30px;
+}
+.eat::before{
+    content: " \1F374 ";
+    font-size: 30px;
+}
+h3{
+    font-size: 28px;
+}
+
+
+.rec_bara{
+    margin-left: 10px;
+    background-color: gray;
+    height: 29px;
+    width: 250px;
+    border-style:ridge;
+    border-color: rgb(122, 82, 122);
+}
+.rec_plin{
+    vertical-align: middle;
+    background-color: gold;
+    width: 92%;
+    height: 100%;
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: center;
+    animation: progres 5s;
+}
+
+@keyframes progres {
+    from {width: 0; background-color: gray; color: gray;}
+    to {width: 92%; background-color: gold; color: black;}
+    
+}
+
+
+
+
+
+@media only screen and (max-width: 1850px) {
+    .men{
+        width: 180px;
+    }
+    .content {
+        min-width: 180px;
+      }
+  
+}
+@media only screen and (max-width: 1500px) {
+    header{
+        height: 100%;
+    }
+    #title{
+        font-size: 50px;
+    }
+    .dd{
+        display: block;
+        position: relative;
+    }
+    .men{
+        width: 100%;
+        height: 40px;
+        font-size: medium;
+    }
+
+    nav{
+        position: relative;
+        width: 100%;
+    }
+    .bar{
+        top:0;
+        font-size: x-large;
+        margin-top: 14px;
+        margin-left: 30%;
+        height: 30px;
+        width: 60%;
+    }
+    #meniu_head{
+        position: relative;
+        width: 100%;
+        display: inline-block;
+    }
+    #grid{
+        grid-template-columns: 38% 38%;
+    }
+  
+}
+@media only screen and (max-width: 920px){
+
+}
