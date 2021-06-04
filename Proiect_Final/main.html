@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Gheent </title>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body onload="clock()">
+    <header>
+        <h1 id="title"> Gheent</h1>
+
+        <input class="bar" id="cauta" type="text" placeholder=" Cauta hotel" onkeypress="searcher(event)">
+
+        <nav>
+            <ul id="meniu_head">
+                <li class="dd"><button class="men">Lista Hoteluri</button>
+                    <div class="content">
+                        <a href="#">Recomandate</a>
+                        <a href="#">Favorite</a>
+                        <a href="#">Rezervari</a>
+                    </div>
+                </li>
+                <li class="dd"><button class="men">Contact</button>
+                    <div class="content">
+                        <a href="crez_intrebari.html">Puneti-ne o intrebare</a>
+                        <a href="faq.html">Intrebari frecvente</a>
+                        <a href="despre.html">Despre noi</a>
+                    </div>
+                </li>
+                <li class="dd"><button class="men">Logare</button>
+                    <div class="content">
+                        <a href="log.html">Conectati-va la cont</a>
+                        <a href="register.html">Inregistrare</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <h2>Hotel Geneva</h2><br>
+        
+        <a class="link" href="https://bit.ly/3rRLRWA">&#128205; Strada Ion Antonescu Nr.55, Craiova, Romania</a>
+
+
+
+        <span id="fav">
+            <svg id="heart" onclick="hfill()" viewBox="0 0 32 29.6">
+                <path stroke="black" stroke-width=1 d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+            </svg> 
+            <button id="rezerv" class="rez">Rezervati Acum</button>
+        </span>
+        <script> if (localStorage.getItem("fill") == 1) document.getElementById("heart").style.fill = "red";</script>
+        <br><br><br>
+
+        <div id="grid">
+            <img class="base-form" src="geneva_1.jpg" alt="img_hotel1">
+            <img class="base-form" src="geneva_2.jpg" alt="img_hotel2">
+            <img class="base-form" src="geneva_3.jpg" alt="img_hotel3">
+            <img class="base-form" src="geneva_4.jpg" alt="img_hotel4">
+            <img class="base-form" src="geneva_5.jpg" alt="img_hotel5">
+        </div>
+
+        <br>
+
+        <h3>Descriere</h3>
+        <p class="desc"> Situat la 300m de gara din Craiova Hotel Geneva este locatia perfecta pentru turistii din Craiova. Accesul WiFi este gratuit în întreaga proprietate. 
+            Camerele sunt dotate cu aer condiționat, minibar și TV cu ecran plat cu canale prin cablu. Băile private au articole de toaletă gratuite și uscător de păr.
+             Majoritatea camerelor sunt prevăzute cu balcon. De asemenea, majoritatea camerelor oferă vedere panoramică la oraș.
+        </p>
+        <p class="desc">Oaspeții pot savura mâncăruri internaționale la restaurantul à la carte de la hotel. La cerere sunt servite preparate pentru diete speciale.</p>
+        <p class="desc">Animalele sunt primite in camerele hotelului.</p>
+        <br>
+
+        <h3>Facilitati</h3>
+        <span class="wifi">Wi-Fi gratuit </span><span class="parc">parcare </span><span class="animal">acceptă animale de companie </span><span class="eat">restaurant </span>
+
+        <br><br>
+
+        
+        <h3>Recenzie:</h3><br>
+
+        <div class="rec_bara">
+            <div class="rec_plin">9.2</div>
+        </div>
+        <br><br>
+
+    </main>
+    <footer id="ceas"></footer>
+
+
+</body>
+
+</html>

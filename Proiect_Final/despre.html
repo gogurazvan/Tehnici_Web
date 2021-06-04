@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Gheent </title>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1 id="title"> Gheent</h1>
+
+        <input class="bar" id="cauta" type="text" placeholder=" Cauta hotel" onkeypress="searcher(event)">
+
+        <nav>
+            <ul id="meniu_head">
+                <li class="dd"><button class="men">Lista Hoteluri</button>
+                    <div class="content">
+                        <a href="#">Recomandate</a>
+                        <a href="#">Favorite</a>
+                        <a href="#">Rezervari</a>
+                    </div>
+                </li>
+                <li class="dd"><button class="men">Contact</button>
+                    <div class="content">
+                        <a href="crez_intrebari.html">Puneti-ne o intrebare</a>
+                        <a href="faq.html">Intrebari frecvente</a>
+                        <a href="despre.html">Despre noi</a>
+                    </div>
+                </li>
+                <li class="dd"><button class="men">Logare</button>
+                    <div class="content">
+                        <a href="log.html">Conectati-va la cont</a>
+                        <a href="register.html">Inregistrare</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <h2>Despre site</h2><br><br>
+        
+        <p class="desc"> Aici poti gasi cele mai bune oferte de cazare pentru vacanta ta!</p>
+        <br><br><br><br>
+
+        <div id="present">
+
+            <div class="transition">
+              <img src="geneva_1.jpg" alt="hotel1" class="im_tr">
+            </div>
+            
+            <div class="transition">
+              <img src="geneva_2.jpg" alt="hotel2" class="im_tr">
+            </div>
+            
+            <div class="transition">
+              <img src="geneva_3.jpg" alt="hotel3" class="im_tr">
+            </div>
+
+            <div class="transition">
+                <img src="geneva_4.jpg" alt="hotel4" class="im_tr">
+            </div>
+
+            <div class="transition">
+                <img src="geneva_5.jpg" alt="hotel5" class="im_tr">
+            </div>
+            
+        </div>
+        <script> presentation(); </script>
+
+    </main>
+
+
+
+</body>
+
+</html>
